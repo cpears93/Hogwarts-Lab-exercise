@@ -1,0 +1,11 @@
+<h3>All Students</h3>
+
+<% for student in @students %>
+  <p>Name: <%= student.full_name %> </p>
+  <p>School: <%= student.find_house.name %> </p>
+  <p>Age: <%= student.age %> </p>
+  <hr>
+
+  <% end %>
+
+<p><a href="/students/new">Create New Student</a></p>
